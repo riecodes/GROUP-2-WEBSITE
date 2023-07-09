@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;    
+
+    /* AVAILABLE FONTS 
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;font-family: 'Roboto', sans-serif;
+
+    */
+}
+
+/* CONTENT */
+
+/* HERO SLIDER */
+.hero-slider {
+    background-color: #111111;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: 2s ease;
+}
+
+.slider-item {
+    flex: 0 0 100%; /* Each slider item takes full width */
+}
+
+.slider-container img {
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;    
+}
+
+.slider-controls {
+    position: absolute;
+    top: 20%;
+    left: 50%;        
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.slider-controls img {    
+    padding: 200px 0px 200px 0px;
+    height: auto;    
+    background-color: #007F00;
+    width: 35px;
+    opacity: 0.2;
+    cursor: pointer;
+    margin: auto;
+    transition: 1s ease;
+}
+.slider-controls img:hover {
+    transition: 1s ease;
+    opacity: 1;
+}
+/* HERO SLIDER */
+
+/* RAPPORT */
+.rapport {
+    background-color: #111111;
+    padding: 150px;
+    color: white;
+}
+.catch-phrase {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0px 0px 50px 0px;
+    display: flex;
+}
+.catch-phrase h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.catch-phrase p {
+    text-align: justify;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.catch-phrase img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.shop-now-btn {
+    padding: 20px 50px 20px 50px;
+    border: none;
+    border-radius: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #1C1C1C;
+    transition: 0.5s ease;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.shop-now-btn:hover {
+    color: white;
+    background-color: #1C1C1C;
+    border: 1px solid white;
+    transform: scale(1.1)
+}
+.strengths {
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 200px 50px 200px;
+    background-color: #111111;
+    color: white;
+    font-size: 1.5rem;
+}
+.strengths img {
+    width: 17rem;
+}
+.maximum-performance {
+    display: flex;
+}
+.max-img {
+    padding: 50px;
+}
+.max-text {
+    padding: 50px;
+    text-align: justify;
+    margin: auto;
+}
+.desktop-a {
+    color:bisque;
+    text-decoration: none;
+    font-weight: bold;
+}
+.warranty {
+    display: flex;
+}
+.war-img {
+    padding: 50px;
+}
+.war-text {
+    padding: 50px;
+    text-align: justify;
+    margin: auto;
+}
+.protection {
+    display: flex;
+}
+.prot-img {
+    padding: 50px;
+}
+.prot-text {
+    padding: 50px;
+    text-align: justify;
+    margin: auto;
+}
+/* RAPPORT */
+
+/* PRODUCTS */
+.products {
+    background-color: #111111;
+}
+.products h1 {
+    color: white;
+}
+.products h4 {
+    color: white;
+}
+.products-landing-text {
+    padding: 50px 0px 0px 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 5rem;
+    color: white;
+}
+/* ROW 1*/
+.row1 {
+    display: flex;        
+    justify-content: center;
+}
+.desktops {
+    background-image: url(/PRODUCT-PICTURES/retrowave.jpg);
+    background-position:center;
+    background-size: cover;    
+    margin: 50px 25px 50px 0px;
+    transition: 0.5s ease;
+    border-radius: 1rem;
+    position: relative;    
+}
+.desktops .hv-img {
+    width: 15rem;
+    position: absolute;
+    top: 7%;
+    left: -9%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.desktops:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+.desktops img {
+    padding: 50px 150px 50px 150px; 
+    width: 10rem;
+}
+.desktops a {
+    text-decoration: none;
+}
+.desktops h4 {
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    top: -10px; 
+    font-size: 25px;    
+    text-align: center;    
+    font-family: 'Roboto';
+}
+.big-box {
+    background-color: #1c1c1c;
+    margin: 50px 0px 50px 25px;
+    transition: 0.5s ease;
+    border-radius: 1rem;
+    border: 0.5px solid white;
+    position: relative;
+    overflow: hidden;
+}
+.big-box::before{
+    content: "";
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    width: 10rem;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 40%, rgba(255, 255, 255, 0) 60%);
+    
+}
+.big-box .hv-img {
+    width: 40rem;
+    position: absolute;
+    top: -72%;
+    left: -54%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.big-box:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+.big-box img {
+    padding: 50px 150px 50px 150px; 
+    width: 10rem;
+}
+.big-box h4 {
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    top: -10px;    
+    font-size: 25px;    
+    text-align: center;    
+    font-family: 'Roboto';
+}
+.big-box a {
+    text-decoration: none;
+}
+/* ROW 1*/
+
+/* ROW 2*/
+.row2 {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    background-color: #1C1C1C;
+    margin: 0px 25px 50px 25px ;
+    transition: 0.5s ease;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    width: 10rem;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 40%, rgba(255, 255, 255, 0) 60%);
+    
+}
+.box:hover {
+    transform: scale(1.1);
+}
+.box .hv-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.box img {    
+    padding: 50px 70px 50px 70px;    
+    width: 7rem;
+}
+.box h4 {
+    position: relative;
+    top: -10px;    
+    padding: 20px 20px 20px 20px;
+    font-size: 25px;    
+    text-align: center;    
+    font-family: 'Roboto';
+}
+.box a {
+    text-decoration: none;
+}
+#procie-thumb {
+    width: 10rem;
+    top: -10%;
+    left: -10%;
+}
+#ram-thumb{
+    width: 10rem;
+    top: 5%;
+    left: -10%;
+}
+#mobo-thumb {
+    width: 10rem;
+    top: -4%;
+    left: -10%;
+}
+#psu-thumb {
+    top: -4%;
+}
+#mouse-thumb {
+    top: 5%;
+}
+/* ROW 2*/
+/* PRODUCTS */
+
+
+/* CONTENT */
